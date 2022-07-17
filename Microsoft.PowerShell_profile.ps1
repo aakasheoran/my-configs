@@ -15,6 +15,18 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 (Get-PSReadLineOption).HistorySearchCursorMovesToEnd=$TRUE
 
 # Aliases
+Function goToPersonal {Set-Location -Path D:\Stuff\Programming\Personal}
+Set-Alias -Name personal -Value goToPersonal
+
+Function gitClone { git clone $args }
+Set-Alias -Name gclone -Value gitClone
+
+Function gitStash { git stash }
+Set-Alias -Name gstash -Value gitStash
+
+Function gitStat { git status }
+Set-Alias -Name gstat -Value gitStat
+
 Function gitChekout {
   param ([switch]$b)
   if ($b) { git checkout -b $args }
@@ -31,10 +43,12 @@ Function gitChekoutAndPull {
 }
 Set-Alias -Name gcp -Value gitChekoutAndPull
 
-Function deleteLocalBranch {
-  git branch -d $args
+Function deleteBranch {
+  param ([switch]$r)
+  if ($r) { git push origin -d $args }
+  else { git branch -d $args }
 }
-Set-Alias -Name gdel -Value deleteLocalBranch
+Set-Alias -Name gdel -Value deleteBranch
 
 Function listBranches {
   if (!$args) { git branch }
