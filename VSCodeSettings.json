@@ -1,15 +1,87 @@
 {
-  "editor.fontSize": 18,
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "CaskaydiaCove NF, Cascadia Code, Consolas, 'Courier New', monospace",
-  "editor.tabSize": 2,
-  "editor.fontLigatures": true,
-  "workbench.startupEditor": "none",
-  "redhat.telemetry.enabled": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git.confirmSync": false,
-  "explorer.confirmDelete": false
+	"editor.fontSize": 16,
+	"workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+	"editor.fontFamily": "JetBrainsMono NFM, CaskaydiaCove NFM, FiraCode NFM, Consolas, 'Courier New', monospace",
+	"editor.tabSize": 2,
+	"editor.fontLigatures": true,
+	"workbench.startupEditor": "none",
+	"redhat.telemetry.enabled": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"git.confirmSync": false,
+	"explorer.confirmDelete": false,
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"C_Cpp.intelliSenseCacheSize": 0,
+	"settingsSync.ignoredSettings": ["-C_Cpp.intelliSenseCacheSize"],
+	"C_Cpp.intelliSenseUpdateDelay": 500,
+	"tabnine.experimentalAutoImports": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"prettier.printWidth": 300,
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"debug.onTaskErrors": "showErrors",
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"editor.linkedEditing": true,
+	"prettier.singleQuote": true,
+	"explorer.confirmDragAndDrop": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"prettier.jsxSingleQuote": true,
+	"window.commandCenter": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python",
+		"editor.formatOnType": true
+	},
+	"workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.size": "fill",
+	"workbench.editorLargeFileConfirmation": 5120,
+	"files.maxMemoryForLargeFilesMB": 8192,
+	"vscode-office.openOutline": true,
+	"aws.telemetry": false,
+	"yaml.customTags": [
+		"!And",
+		"!And sequence",
+		"!If",
+		"!If sequence",
+		"!Not",
+		"!Not sequence",
+		"!Equals",
+		"!Equals sequence",
+		"!Or",
+		"!Or sequence",
+		"!FindInMap",
+		"!FindInMap sequence",
+		"!Base64",
+		"!Join",
+		"!Join sequence",
+		"!Cidr",
+		"!Ref",
+		"!Sub",
+		"!Sub sequence",
+		"!GetAtt",
+		"!GetAZs",
+		"!ImportValue",
+		"!ImportValue sequence",
+		"!Select",
+		"!Select sequence",
+		"!Split",
+		"!Split sequence"
+	],
+	"[csharp]": {
+		"editor.defaultFormatter": "csharpier.csharpier-vscode"
+	},
+	"editor.inlineSuggest.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": true,
+		"scminput": false
+	}
 }
