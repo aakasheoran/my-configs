@@ -8,11 +8,16 @@ sudo apt-get install fish
 
 ### Change default Shell
 
-Either use `chsh` or add the following command at the end of `.bashrc` file:
+You can use one of the two methods to change the default shell:
 
-```bash
-echo 'exec fish' >> ~/.bashrc
-```
+1. Add `/usr/local/bin/fish` to `/etc/shells` and change your default shell with `chsh -s` to `/usr/local/bin/fish`
+   ```bash
+   chsh -s /usr/local/bin/fish
+   ```
+2. Or add the following command at the end of `.bashrc` file:
+   ```bash
+   echo 'exec fish' >> ~/.bashrc
+   ```
 
 ### Create Symlink
 
